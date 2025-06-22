@@ -9,7 +9,6 @@ env.config()
 
 app.use(express.json());
 // Handling cross origin error 
-import cors from 'cors'; // or const cors = require('cors');
 
 const corsOptions = {
   origin: 'https://assesment-1-83o7.onrender.com',
