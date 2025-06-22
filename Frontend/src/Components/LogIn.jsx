@@ -20,7 +20,7 @@ const Login = () => {
         setError("");
         setSuccess(false);
         try {
-            const res=await axios.post("http://localhost:3000/api/user/login", {
+            const res=await axios.post("https://assesment-ldj4.onrender.com/api/user/login", {
                 email: form.email,
                 password: form.password
             });
