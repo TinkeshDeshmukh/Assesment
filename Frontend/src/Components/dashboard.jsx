@@ -50,7 +50,7 @@ const AddItemPage = () => {
 
         try {
             await axios.post(
-                "http://localhost:3000/api/data/upload",
+                "https://assesment-ldj4.onrender.com/api/data/upload",
                 data,
                 {
                     headers: {
