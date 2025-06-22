@@ -9,7 +9,7 @@ const GetItems = () => {
     useEffect(() => {
         async function fetchItems() {
             try {
-                const response = await axios.get("https://assesment-xepm.onrender.com/api/data/fetch", {
+                const response = await axios.get("https://assesment-fmss.onrender.com/api/data/fetch", {
                     headers: {
                         Authorization: `${localStorage.getItem("token")}`,
                     },
