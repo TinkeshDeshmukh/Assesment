@@ -8,8 +8,7 @@ const AddItemPage = () => {
         name: "",
         type: "",
         description: "",
-        image: null,
-        token: "",
+        image: null
     });
     const [status, setStatus] = useState("");
     const [statusType, setStatusType] = useState(""); // "success" or "error"
