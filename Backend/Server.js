@@ -10,7 +10,7 @@ env.config()
 app.use(express.json());
 // Handling cross origin error 
 const corsOptions = {
-  origin: ['https://assesment-1-0anw.onrender.com'], 
+  origin: ['https://assesment-1-87vk.onrender.com'], 
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
