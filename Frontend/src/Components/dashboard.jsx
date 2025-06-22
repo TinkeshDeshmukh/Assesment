@@ -50,7 +50,7 @@ const AddItemPage = () => {
 
         try {
             await axios.post(
-                "https://assesment-xepm.onrender.com/api/data/upload",
+                "https://assesment-fmss.onrender.com/api/data/upload",
                 data,
                 {
                     headers: {
