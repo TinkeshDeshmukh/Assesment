@@ -9,7 +9,12 @@ env.config()
 
 app.use(express.json());
 // Handling cross origin error 
-app.use(cors());
+const corsOptions = {
+  origin: ['http://localhost:3000', 'https://your-frontend.onrender.com'], // allow both dev & production frontend
+  credentials: true, // enable cookies & Authorization headers
+};
+
+app.use(cors(corsOptions));
 
 mongoose.connect(process.env.MongoURL )
     .then(() => {
