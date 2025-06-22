@@ -9,14 +9,8 @@ env.config()
 
 app.use(express.json());
 // Handling cross origin error 
-const corsOptions = {
-  origin: ['https://assesment-1-87vk.onrender.com'], 
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-};
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.options('*', cors(corsOptions)); 
 
 mongoose.connect(process.env.MongoURL )
