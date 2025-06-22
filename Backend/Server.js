@@ -9,7 +9,15 @@ env.config()
 
 app.use(express.json());
 // Handling cross origin error 
-app.use(cors())
+import cors from 'cors'; // or const cors = require('cors');
+
+const corsOptions = {
+  origin: 'https://assesment-1-83o7.onrender.com',
+  credentials: true, // optional, for cookies/auth
+};
+
+app.use(cors(corsOptions));
+
 mongoose.connect(process.env.MongoURL )
     .then(() => {
         console.log(`Database connected`);
