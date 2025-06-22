@@ -20,7 +20,7 @@ const Login = () => {
         setError("");
         setSuccess(false);
         try {
-            const res=await axios.post("https://assesment-xepm.onrender.com/api/user/login", {
+            const res=await axios.post("https://assesment-fmss.onrender.com/api/user/login", {
                 email: form.email,
                 password: form.password
             });
