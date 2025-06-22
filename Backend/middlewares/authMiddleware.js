@@ -10,8 +10,7 @@ export const authMiddleware = async (req, res, next) => {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
-    const user = await User.findOne(decode.email);
-    
+   const user = await User.findOne({ email: decoded.email });
 
     if (!user || user.token !== token) {
       return res.status(403).json({ message: "Invalid or expired token" });
