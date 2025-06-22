@@ -15,7 +15,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const data = await axios.post("https://assesment-xepm.onrender.com/api/user/register", form);
+      const data = await axios.post("https://assesment-fmss.onrender.com/api/user/register", form);
       if (data?.data?.message === "User Exist") {
         alert("User already exists. Please log in.");
       } else {
