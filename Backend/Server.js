@@ -11,7 +11,7 @@ app.use(express.json());
 // Handling cross origin error 
 
 const corsOptions = {
-  origin: 'https://assesment-1-83o7.onrender.com',
+  origin: 'https://assesment-1-vi6j.onrender.com',
   credentials: true, // optional, for cookies/auth
 };
 
