@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./Components/Hero";
 import Register from "./Components/Register";
-import Login from "./Components/LogIn.JSx";
+import Login from "./Components/LogIn";
 import Dashboard from "./Components/dashboard";
 import GetItems from "./Components/getItems";
 import Enquire from "./Components/enquire";
